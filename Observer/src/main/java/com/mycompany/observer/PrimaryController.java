@@ -44,7 +44,7 @@ public class PrimaryController {
         
     }
     
-    private void changeBackGColor(String s){
+    private void changeBackGColor(String s) throws IOException{
         color = new Color(s);
         Image img= new Image(color.getPath(),640,480,false,false);
         this.imageViewID.setImage(img);
